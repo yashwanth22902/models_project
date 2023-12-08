@@ -7,7 +7,7 @@ class Topic(models.Model):
     def __str__(self):
         return self.topic_name
 class Webpage(models.Model):
-    tpic_name=models.ForeignKey(Topic,on_delete=models.CASCADE)
+    topic_name=models.ForeignKey(Topic,on_delete=models.CASCADE)
     name=models.CharField(max_length=100)
     url=models.URLField()
     def __str__(self):
