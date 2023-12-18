@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: blue;
+            text-align: center;
+            color: black;
+            border: 0cqmax;
+        }
+        table{
+            background-color: lightblue;
+            color:goldenrod;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>display_Webpage</h1>
+        <table border="5px">
+            <tr><th>Topic_name</th>
+            <th>name</th>
+            <th>url</th></tr>
+            {% for Wo in Webpage %}
+            <tr>
+                <td>{{ Wo.topic_name }}</td>
+                <td>{{ Wo.name }}</td>
+                <td>{{ Wo.url }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
