@@ -23,5 +23,6 @@ urlpatterns = [
     path('display_topics/',display_topics,name='display_topics'),
     path('display_Webpage/',display_Webpage,name='display_Webpage'),
     path('display_AcessRecord/',display_AcessRecord,name='display_AcessRecord'),
+    path('update_Webpage/',update_Webpage,name='update_Webpage'),
     
 ]
